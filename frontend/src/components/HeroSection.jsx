@@ -4,14 +4,15 @@ import { Link } from "react-scroll";
 const HeroSection = () => {
   return (
     <section className="hero">
-      <img src="/restaurant.jpg" alt="restaurant" />
+      <img src="/pocket3.jpeg" alt="restaurant" />
       <div className="item">
         <h3>Dream Maker</h3>
         <div>
-          <h1>Your Personal Dream Maker</h1>
+          <h1>Connect with Expert Instructors in 
+            Sports, Arts, and Music</h1>
           <p>
-            We believe that it is all about the BIG DREAMS and the samll
-            details!
+          Book personalized sessions with qualified
+           instructors to boost your skills and reach your goals
           </p>
           <Link to="contact" spy={true} smooth={true} duration={500}>
             BOOK NOW

@@ -4,13 +4,13 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      url: "/birthday.jpg",
-      title: "Birthday Planning",
+      url: "/basket.jpeg",
+      title: "basketball",
     },
     {
       id: 2,
-      url: "/anniversary.jpg",
-      title: "Anniversary Planning",
+      url: "/fitnees.jpeg",
+      title: "Improve Fitness",
     },
     {
       id: 3,
@@ -19,18 +19,28 @@ const Services = () => {
     },
     {
       id: 4,
-      url: "/gamenight.jpg",
-      title: "Game Night Planning",
+      url: "/images.jpeg",
+      title: "School Play list ",
     },
     {
       id: 5,
-      url: "/party.jpg",
-      title: "Party Planning",
+      url: "/kar.jpeg",
+      title: "karate",
     },
     {
       id: 6,
-      url: "/wedding.jpg",
-      title: "Wedding Planning",
+      url: "/khokho.jpeg",
+      title: "kho..kho",
+    },
+    {
+      id: 6,
+      url: "/music.jpeg",
+      title: "Classes",
+    },
+    {
+      id: 6,
+      url: "/song.jpeg",
+      title: "Stage Confidance",
     },
   ];
   return (
