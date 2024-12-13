@@ -8,11 +8,7 @@ const app = express();
 
 dotenv.config({ path: "./config/config.env"});
 
-app.use(cors({
-    origin: [process.env.FRONTEND_URL],
-    methods: ["POST"],
-    credentials: true,
-}))
+app.use(cors())
 
 // middle wares 
 app.use(express.json());   //.....this express.json is used because we need the json format from the user and mongodb
@@ -22,7 +18,9 @@ app.use("/api/v1/message" , messageRouter);
 
 dbConnection
 
-export default app;
+app.listen(process.env.PORT, () => {
+    console.log(`Server is working at port 4000`)
+});
 
 
 //first make the react app 
@@ -36,3 +34,5 @@ export default app;
 //then go to postman and see is our server is working or not  send msg
 // then check mongodb message 
 // then connect the frontend to app.js file 
+
+
