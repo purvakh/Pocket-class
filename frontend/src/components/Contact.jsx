@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import toast from "react-hot-toast";
+//import toast from "react-hot-toast";
 
-const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
 
   const Contact = () => {
   const [name, setName] = useState("");
