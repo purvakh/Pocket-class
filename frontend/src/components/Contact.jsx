@@ -8,31 +8,34 @@ const Contact = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
+  const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
   const handleSendMessage = async (e) => {
     e.preventDefault();
+    console.log("clicked");
     await axios
       .post(
-        "https://pocket-class.onrender.com/api/v1/message/send",
+        "http://localhost:4000/api/v1/message/send",
         {
           name,
           email,
           subject,
           message,
-        },
-        {
-          withCredentials: true,
-          headers: { "Content-Type": "application/json" },
         }
       )
       .then((res) => {
-        toast.success(res.data.message);
+        alert(res.data.message);
         setName("");
         setEmail("");
         setMessage("");
         setSubject("");
       })
       .catch((error) => {
-        toast.error(error.response.data.message);
+        alert(error.response.data.message);
       });
   };
 
