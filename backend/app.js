@@ -14,6 +14,13 @@ app.use(cors())
 app.use(express.json());   //.....this express.json is used because we need the json format from the user and mongodb
 app.use(express.urlencoded({ extended: true }));  //...to give the correct order of the user name (in the form of string)
 
+app.get("/", (req, res)=> {
+    res.json({
+        success: true,
+        message: "Hello",
+    });
+});
+
 app.use("/api/v1/message" , messageRouter);
 
 dbConnection
