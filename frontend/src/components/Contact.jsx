@@ -19,7 +19,7 @@ const Contact = () => {
     console.log("clicked");
     await axios
       .post(
-        "http://localhost:4000/api/v1/message/send",
+        "https://pocket-class-1.onrender.com/api/v1/message/send",
         {
           name,
           email,
